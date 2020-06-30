@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(void)
+{
+int a[5]={1,2,3,4,5},s,c,identified;
+printf("Enter the number to be searched:");
+scanf("%d",&s);
+printf("Enter the number to be updated:");
+scanf("%d",&c);
+for(int i=0;i<5;i++)
+{
+  if(s==a[i])
+  {
+    a[i]=c;
+    identified=1;
+    break;
+  }
+}
+if(identified==1)
+{
+  printf("The updated array is: ");
+  for(int i=0;i<5;i++)
+  {
+    printf("%d ",a[i]);
+  }
+}
+else
+printf("The element is not found");
+
+  return 0;
+}
